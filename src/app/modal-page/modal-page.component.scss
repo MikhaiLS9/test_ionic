@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+
+
+.container__close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.container__close-button:before,
+.container__close-button:after {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  content: ' ';
+  height: 24px;
+  width: 4px;
+  background-color: black;
+  pointer-events: none;
+}
+
+.container__close-button:before {
+  transform: rotate(45deg);
+}
+
+.container__close-button:after {
+  transform: rotate(-45deg);
+}
+}
